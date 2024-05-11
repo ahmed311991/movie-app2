@@ -1,13 +1,15 @@
 
-import './App.css'
+import './App.css';
+import Home from './views/Home';
 
 function App() {
 
   return (
     <>
-      APPll
+      
+      <Home />
     </>
-  )
+  );
 }
 
 export default App
