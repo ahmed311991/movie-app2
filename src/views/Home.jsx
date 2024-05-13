@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from '../components/Slider/Slider';
+import Popular from '../components/Popular/Popular';
 import { upcoming } from '../temp/upcoming';
 
 
@@ -8,6 +9,7 @@ import { upcoming } from '../temp/upcoming';
     <div>
        
      <Slider />
+     <Popular />
     </div>
   
   );
