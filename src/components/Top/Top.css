@@ -1,0 +1,28 @@
+.top-rated-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: fit-content;
+    
+}
+
+.top-rated-container h3{
+    font-weight : 300px;
+    text-align : center;
+
+}
+.top-rated-container p{
+    font-weight : 300px;
+    
+}
+.top-rated-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: -11px 2px 33px 1px #080707bf;
+    -webkit-box-shadow: -11px 2px 33px 1px rgba(8, 7, 7, .75);
+    
+}
