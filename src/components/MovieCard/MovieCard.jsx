@@ -7,7 +7,7 @@ function MovieCard({
     borderRadius,
     imgSrc,
     movie,
-    cardStyle
+    cardStyle 
 }) {
 
     const styles = {
@@ -17,14 +17,15 @@ function MovieCard({
         height : height,
         width : width, 
         borderRadius,
-
-
+        
     };
   return ( 
-   
+   <div className={cardStyle}>
     <div style={styles}>
-      
     </div>
+   </div>
+    
+
   )
 }
 
