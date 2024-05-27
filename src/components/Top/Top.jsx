@@ -27,7 +27,12 @@ function Top() {
              <div className="top-rated-cards-wrapper">
 {topData.slice(0, 10).map(movie => 
       <>
-      <MovieCard height={"100px"}  width={"200px"} borderRadius={"8px"}  imgSrc={movie.backdrop_path} />
+      <MovieCard 
+        height={"100px"} 
+        width={"200px"}
+        borderRadius={"8px"}
+        imgSrc={movie.backdrop_path}
+        movie = {movie} />
        <p>{movie.title}</p>  
       </>
           
