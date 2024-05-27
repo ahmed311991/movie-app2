@@ -1,5 +1,6 @@
 import React from 'react'
 import { popularData } from '../../temp/popular';
+import {Link} from "react-router-dom";
 
 function MovieCard({
     height,
@@ -20,10 +21,10 @@ function MovieCard({
         
     };
   return ( 
-   <div className={cardStyle}>
+   <Link to={`/movie/details/${movie?.id}`} className={cardStyle}>
     <div style={styles}>
     </div>
-   </div>
+   </Link>
     
 
   )

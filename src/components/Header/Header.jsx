@@ -1,11 +1,12 @@
 import React from 'react'
 import './Header.css'
 import {MdOutlineDarkMode, MdOutlineLightMode} from "react-icons/md"
+import {Link} from "react-router-dom"
 
 function Header() {
   return (
     <div className="header-container">
-      <p className="logo">MovieFanatic</p>
+      <Link to="/" className="logo">MovieFanatic</Link>
       <div className="search-container">
        <input type="text" className="search-input" placeholder="search movies ..."/>
       </div>

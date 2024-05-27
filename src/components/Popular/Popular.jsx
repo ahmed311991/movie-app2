@@ -35,6 +35,7 @@ function Popular() {
         borderRadius={"16px"}
         imgSrc={movie.poster_path}
         cardStyle={"popular-card"}
+        movie = {movie}
       />
      
 
