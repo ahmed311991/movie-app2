@@ -49,3 +49,7 @@
     font-size : 32px;
     font-weight : 300;
 }
+
+.slider-container{
+    margin-top : var(--header-height);
+}
