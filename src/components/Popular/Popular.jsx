@@ -1,8 +1,27 @@
-import React from 'react'
-import { popularData } from '../../temp/popular'
+import React, {useEffect, useState } from 'react'
+//import { popularData } from '../../temp/popular'
+
 import MovieCard from '../MovieCard/MovieCard'
 import './Popular.css'
+import axios from "axios";
+
 function Popular() {
+
+  const [popularData, setPopularData] = useState([]);
+  const [pageNumber, setPageNumber] = useState(1);
+  useEffect(() => {
+    axios(`${import.meta.env.VITE_APP_BASE_URL}/popular?api_key=${import.meta.env.VITE_API_KEY}&page=${pageNumber}`)
+    .then((response) => {
+
+      // console.log(response.data.results);
+      setPopularData(response.data.results);
+    }
+        
+    ).catch (
+        err => console.log(err))
+}, [pageNumber]
+
+);
     
   return (
     <div>
@@ -26,7 +45,7 @@ function Popular() {
       <p>Select Page </p>
         {
         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((number) => (
-          <p className={number === 1 ? "current-page" : "null"}>{number}</p>
+          <p className={number === pageNumber ? "current-page" : "null"} onClick = {() => setPageNumber(number)}>{number}</p>
         ))
       }
       </div>

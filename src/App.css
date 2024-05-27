@@ -12,9 +12,10 @@
   --red : red;
   --white : white;
   --light-bg : #f7f3f3;
-  --transparent-bg : rgba(117, 101, 101, 0.7);
+  --transparent-bg : rgba(20, 20, 20, .7);
   --header-height : 70px;
   --footer-bg : #373232;
+  --grey-text : lightgray;
 }
 
 a {
